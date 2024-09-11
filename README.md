@@ -1,7 +1,7 @@
 # Basic-Calculator
 This Python code creates a fully functional graphical calculator using the Tkinter library. Let’s go through it in detail to understand how it works, including the different parts of the code and the functions they perform.
 
- 1. **Importing Tkinter**
+### 1. **Importing Tkinter**
 ```python
 from tkinter import *
 ```
