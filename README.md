@@ -1,72 +1,71 @@
-# 🧮 Advanced Python GUI Calculator
+# 🧮 Calculator
 
-A powerful and stylish calculator app built using **Python** and **Tkinter**.  
-Packed with features like history, dark/light theme toggle, fullscreen support, sound feedback, and keyboard input handling — all in a clean, responsive UI.
+A simple, lightweight, and extensible calculator application built with Python.
+Supports both desktop and mobile testing environments, with packaging support via PyInstaller.
 
----
+## 🚀 Features
 
-## ⚙ Features
+* Basic arithmetic operations (addition, subtraction, multiplication, division).
+* Clean and modular Python code.
+* Cross-platform compatibility.
+* Ready for packaging into executables (`.exe`, `.app`, etc.) using **PyInstaller**.
+* Includes **test script** for mobile-friendly verification.
 
-- ✅ **Basic Operations** — Add, subtract, multiply, divide, modulo, and decimals.
-- 🕶️ **Dark/Light Mode** — Seamlessly switch between dark and light themes.
-- 🔊 **Sound Feedback** — Optional beep sound on key press.
-- 🧾 **History Viewer** — View the last 5 calculations with one click.
-- 🔁 **Keyboard Input** — Full support for Enter, Backspace, Escape, numbers, and operators.
-- 🔍 **Fullscreen Mode** — Toggle fullscreen for a distraction-free experience.
-- 🧹 **Clear Options** — Clear input or reset entire session history.
-- 💻 **Responsive Layout** — Auto-resizes with window resizing.
+## 📂 Project Structure
 
-## 🖼️ Screenshots
-![image](https://github.com/user-attachments/assets/2049463e-ba56-4cb2-97d6-30f19b664515)
+```
+.
+├── calculator.py        # Main calculator program
+├── mobile_test.py       # Test script for mobile devices
+├── calculator.spec      # PyInstaller build configuration
+├── requirements.txt     # Dependencies
+└── tempCodeRunnerFile.py# Temporary run file (ignore)
+```
 
-## 🚀 Getting Started
+## ⚙️ Installation
 
-### 🔧 Requirements
-- Python 3.x
-- `tkinter` (comes pre-installed with Python)
+1. Clone the repository:
 
-### ▶️ Run the App
+   ```
+   git clone https://github.com/your-username/calculator.git
+   cd calculator
+   ```
+
+2. Create a virtual environment (recommended):
+
+   ```
+   python -m venv venv
+   source venv/bin/activate   # On Linux/Mac
+   venv\Scripts\activate      # On Windows
+   ```
+
+3. Install dependencies:
+
+   ```
+   pip install -r requirements.txt
+   ```
+
+## ▶️ Usage
+
+Run the calculator:
+
 ```
 python calculator.py
 ```
 
-### 🪄 Build Executable (Windows/cmd)
+Run mobile test script:
 
 ```
-pyinstaller --onefile --noconsole calculator.py
+python mobile_test.py
 ```
 
-This will generate a standalone `.exe` in the `dist/` folder, without opening a console window.
 
----
+## 🤝 Contributing
 
-## 🎯 Keyboard Shortcuts
+Contributions are welcome!
 
-| Key                                 | Action              |
-| ----------------------------------- | ------------------- |
-| `Enter` / `=`                       | Evaluate Expression |
-| `C`                                 | Clear Input         |
-| `Backspace`                         | Delete Last Digit   |
-| `Escape`                            | Exit App            |
-| `0-9`, `+`, `-`, `*`, `/`, `%`, `.` | Standard Input      |
-| `(`, `)`                            | Parentheses         |
-
-## 🧠 Tech Stack
-
-* **Language**: Python
-* **GUI Library**: Tkinter
-
-## 📁 File Structure
-
-```
-calculator.py      # Main application file
-README.md          # Project documentation
-/dist              # Output folder after building executable
-/build             # PyInstaller build cache (can be ignored)
-.spec file         # PyInstaller config (auto-generated)
-```
-
-## 🙌 Credits
-
-Created by Vortex/Kritik
-Feel free to use, modify, or suggest improvements!
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature-name`)
+3. Commit changes (`git commit -m "Add feature"`)
+4. Push to branch (`git push origin feature-name`)
+5. Open a Pull Request
